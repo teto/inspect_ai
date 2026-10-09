@@ -65,7 +65,7 @@ before a script can pin its own, so an image with a default-user-writable
 directory ahead of ``/bin`` would let the agent supply the shell that root runs.
 """
 
-SYSTEM_PATH = "/usr/sbin:/usr/bin:/sbin:/bin"
+SYSTEM_PATH = "/run/current-system/sw/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 """The only directories a host-issued command resolves utilities from.
 
 The helpers in this module read it at call time so a test can point it at a
